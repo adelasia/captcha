@@ -29,7 +29,7 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
 
 ## Why do I need this?
 
-NVIDIA Inspector LOD bias lets players pull mip levels that can expose texture detail meant to stay hidden. This mod packs digits into an atlas and draws them on a HUD overlay so bias tricks do not reveal the answer the same way as plain UI textures.
+This mod prevents players from using NVIDIA Inspector LOD bias to gain an unfair advantage.
 
 <table>
   <tr>
