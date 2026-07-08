@@ -1,0 +1,74 @@
+ImageSetClass {
+ Name "screencode_set"
+ RefSize 2048 2048
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{A91E4C7B2D608F31}captcha/captcha/gui/assets/screencode_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass glyph_0 {
+   Name "glyph_0"
+   Pos 8 8
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_1 {
+   Name "glyph_1"
+   Pos 321 8
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_2 {
+   Name "glyph_2"
+   Pos 634 8
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_3 {
+   Name "glyph_3"
+   Pos 947 8
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_4 {
+   Name "glyph_4"
+   Pos 1260 8
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_5 {
+   Name "glyph_5"
+   Pos 8 321
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_6 {
+   Name "glyph_6"
+   Pos 321 321
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_7 {
+   Name "glyph_7"
+   Pos 634 321
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_8 {
+   Name "glyph_8"
+   Pos 947 321
+   Size 304 304
+   Flags 0
+  }
+  ImageSetDefClass glyph_9 {
+   Name "glyph_9"
+   Pos 1260 321
+   Size 304 304
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

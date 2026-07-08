@@ -1,0 +1,80 @@
+PanelWidgetClass GlyphHudRoot {
+ visible 1
+ clipchildren 0
+ ignorepointer 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ priority 1000
+ {
+  PanelWidgetClass GlyphHudDialog {
+   clipchildren 0
+   ignorepointer 1
+   position 0 0
+   size 0.2432 0.4608
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style blank
+   {
+    PanelWidgetClass GlyphDigitRow {
+     clipchildren 0
+     ignorepointer 1
+     position 0 0.129
+     size 0.588 0.18
+     halign center_ref
+     valign top_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      ImageWidgetClass OverlayGlyphA {
+       visible 1
+       ignorepointer 1
+       position -0.16 0
+       size 0.5 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       "stretch mode" fit_h_center
+       filter 1
+      }
+      ImageWidgetClass OverlayGlyphB {
+       visible 1
+       ignorepointer 1
+       position 0.16 0
+       size 0.5 1
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       mode blend
+       "src alpha" 1
+       "clamp mode" clamp
+       "stretch mode" fit_h_center
+       filter 1
+      }
+     }
+    }
+   }
+  }
+ }
+}
