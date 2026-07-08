@@ -14,6 +14,8 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
 - Three attempts per session, correct answer required to continue.
 - Captcha is shown once per game session until the client is restarted.
 
+`LOD sensitivity varies by resolution; lower res needs less LOD bias, higher res needs more.`
+
 <table>
   <tr>
     <td width="50%"><img src="screenshots/screenshot1.png" alt="Normal LOD bias" width="100%"/></td>
@@ -21,7 +23,7 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
   </tr>
   <tr>
     <td align="center"><b>Normal LOD bias (±0)</b></td>
-    <td align="center"><b>Higher LOD bias (+1.5 or higher)</b></td>
+    <td align="center"><b>Higher LOD bias (around +1.5 or higher)</b></td>
   </tr>
 </table>
 
