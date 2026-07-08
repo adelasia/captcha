@@ -8,6 +8,10 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
 
 ---
 
+**Complementary mod:** [obscura](https://github.com/adelasia/obscura) - fullscreen overlay that blocks bots and LOD-bias abuse ingame.
+
+---
+
 ## How it works
 
 - On connect, the client shows a 2-digit captcha before joining.
