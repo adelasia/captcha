@@ -21,7 +21,7 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
   </tr>
   <tr>
     <td align="center"><b>Normal LOD bias (±0)</b></td>
-    <td align="center"><b>Higher LOD bias (+1 or higher)</b></td>
+    <td align="center"><b>Higher LOD bias (+1.5 or higher)</b></td>
   </tr>
 </table>
 
