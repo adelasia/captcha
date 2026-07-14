@@ -1,0 +1,20 @@
+ImageSetClass {
+ Name "captcha_title"
+ RefSize 1632 408
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{9A8EFBFBCF0057F3}captcha/gui/assets/captcha_title.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass title {
+   Name "title"
+   Pos 0 0
+   Size 1632 408
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

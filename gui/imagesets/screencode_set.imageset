@@ -4,7 +4,7 @@ ImageSetClass {
  Textures {
   ImageSetTextureClass {
    mpix 1
-   path "{A91E4C7B2D608F31}captcha/captcha/gui/assets/screencode_atlas.edds"
+   path "{A91E4C7B2D608F31}captcha/gui/assets/screencode_atlas.edds"
   }
  }
  Images {

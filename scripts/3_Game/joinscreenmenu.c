@@ -49,7 +49,7 @@ class JoinScreenMenu extends UIScriptedMenu
 
 	override Widget Init()
 	{
-		layoutRoot = GetGame().GetWorkspace().CreateWidgets("captcha/captcha/gui/layouts/join_screen_dialog.layout");
+		layoutRoot = GetGame().GetWorkspace().CreateWidgets("captcha/gui/layouts/join_screen_dialog.layout");
 
 		m_CaptchaTitleRow = layoutRoot.FindAnyWidget("CaptchaTitleRow");
 		m_AccentLine = layoutRoot.FindAnyWidget("AccentLine");
@@ -339,7 +339,7 @@ class JoinScreenMenu extends UIScriptedMenu
 			m_ConfirmButton.SetColor(ARGB(210, 22, 22, 22));
 
 		if (m_ConfirmButtonLabel)
-			m_ConfirmButtonLabel.SetColor(ARGB(255, 239, 37, 37));
+			m_ConfirmButtonLabel.SetColor(ARGB(255, 255, 255, 255));
 	}
 
 	private void ApplyMenuButtonStyle(Widget btn, TextWidget label, bool hovered)
@@ -555,13 +555,15 @@ class JoinScreenMenu extends UIScriptedMenu
 
 	private void CancelJoin()
 	{
-		g_Game.m_JoinPendingConnect = false;
-		g_Game.m_JoinScreenPassed = false;
-		g_Game.m_JoinScreenTries = 3;
-		g_Game.RequestExit(0);
+		ExitJoinScreen();
 	}
 
 	private void FailOut()
+	{
+		ExitJoinScreen();
+	}
+
+	private void ExitJoinScreen()
 	{
 		g_Game.m_JoinPendingConnect = false;
 		g_Game.m_JoinScreenPassed = false;

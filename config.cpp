@@ -16,11 +16,11 @@ class CfgMods
 {
 	class captcha
 	{
-		dir = "captcha/captcha";
+		dir = "captcha";
 		hideName = 0;
 		hidePicture = 0;
 		name = "captcha";
-		version = "08.07.25";
+		version = "14.07.26";
 		credits = "adelasia";
 		author = "adelasia";
 		extra = 0;
@@ -33,20 +33,21 @@ class CfgMods
 			{
 				files[] =
 				{
-					"captcha/captcha/gui/imagesets/screencode_set.imageset"
+					"captcha/gui/imagesets/screencode_set.imageset",
+					"captcha/gui/imagesets/captcha_title.imageset"
 				};
 			};
 
 			class gameScriptModule
 			{
 				value = "";
-				files[] = { "captcha/captcha/scripts/3_Game" };
+				files[] = { "captcha/scripts/3_Game" };
 			};
 
 			class missionScriptModule
 			{
 				value = "";
-				files[] = { "captcha/captcha/scripts/5_Mission" };
+				files[] = { "captcha/scripts/5_Mission" };
 			};
 		};
 	};

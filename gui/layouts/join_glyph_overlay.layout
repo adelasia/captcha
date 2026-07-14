@@ -14,7 +14,7 @@ PanelWidgetClass GlyphHudRoot {
    clipchildren 0
    ignorepointer 1
    position 0 0
-   size 0.2432 0.4608
+   size 0.20672 0.39168
    halign center_ref
    valign center_ref
    hexactpos 0
@@ -40,7 +40,7 @@ PanelWidgetClass GlyphHudRoot {
        visible 1
        ignorepointer 1
        position -0.16 0
-       size 0.5 1
+       size 0.261 0.8
        halign center_ref
        valign center_ref
        hexactpos 0
@@ -58,7 +58,7 @@ PanelWidgetClass GlyphHudRoot {
        visible 1
        ignorepointer 1
        position 0.16 0
-       size 0.5 1
+       size 0.261 0.8
        halign center_ref
        valign center_ref
        hexactpos 0

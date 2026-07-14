@@ -79,7 +79,11 @@ modded class DayZGame
 		{
 			m_JoinMenuRetries++;
 			GetCallQueue(CALL_CATEGORY_GUI).CallLater(OpenJoinScreen, 500, false);
+			return;
 		}
+
+		if (m_JoinPendingConnect)
+			Print("[captcha] gave up opening the join screen after " + m_JoinMenuRetries + " retries; player is stuck pending connect");
 	}
 
 	void OnJoinScreenPassed()
@@ -119,7 +123,7 @@ modded class DayZGame
 		if (m_JoinHudRoot)
 			return;
 
-		m_JoinHudRoot = GetWorkspace().CreateWidgets("captcha/captcha/gui/layouts/join_glyph_overlay.layout");
+		m_JoinHudRoot = GetWorkspace().CreateWidgets("captcha/gui/layouts/join_glyph_overlay.layout");
 		if (!m_JoinHudRoot)
 			return;
 
