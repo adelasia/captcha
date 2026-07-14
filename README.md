@@ -14,17 +14,19 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
 
 ### False positives
 
-**At default settings, there should not be any false positives on any resolution.**
+**At default settings, the digits render normally on any common resolution.**
 
-A white screen only appears if Texture LOD Bias is raised.
+Unlike [obscura](https://github.com/adelasia/obscura)'s fullscreen overlay, captcha has no
+hard invisible/white cutoff - the digit glyphs are a normal texture that just blurs
+progressively as LOD bias increases, then genuinely fades to fully transparent once bias
+pushes far enough.
 
-The mod's visible mip is set to **3** (mips 0–2 are invisible, 3+ are white).
+At default (zero) LOD bias, the natural mip level across common resolutions sits
+comfortably below the fade threshold - no false positives. Triggering the fade
+requires roughly **+1.6** LOD bias at 1280x720 or **+2.6** at 2560x1440 (scales with
+resolution, same as the mod's own on-screen digit size).
 
-`x = log₂( max(2048 / width, 2048 / height) )`
-
-At default settings, **x stays below 3 on all common resolutions**, no false positives.
-
-**Either way, triggering means abnormal texture LOD is active.**
+**Either way, seeing the digits blur or fade means abnormal texture LOD is active.**
 
 ---
 
@@ -70,32 +72,38 @@ This mod prevents players from using NVIDIA Inspector LOD bias to gain an unfair
 
 ## Install
 
+This repo is source only - grab the built mod from Steam Workshop, or build it
+yourself from this source using DayZ Tools (AddonBuilder).
+
 ### Server
 
-1. Copy the `@captcha` folder into your DayZ server directory.
-2. Place `adelasia.bikey` from `@captcha/keys/` into the server `keys/` folder.
-3. Add `@captcha` to your server mod list.
-4. Set `verifySignatures = 2` in `serverDZ.cfg`.
+1. Add `@captcha` to your server mod list (Workshop) or your own built `@captcha` folder.
+2. Place `captcha.bikey` into the server `keys/` folder.
+3. Set `verifySignatures = 2` in `serverDZ.cfg`.
 
 ### Client
 
-1. Subscribe on Steam Workshop **or** copy `@captcha` into your DayZ mods folder.
+1. Subscribe on Steam Workshop **or** build `@captcha` yourself from this source.
 2. Enable `@captcha` in the launcher / DZSA mod list.
 
-The client folder must include:
+A built client folder must include:
 
 ```
 @captcha/
   addons/captcha.pbo
-  addons/captcha.pbo.adelasia.bisign
-  keys/adelasia.bikey
+  addons/captcha.pbo.captcha.bisign
+  keys/captcha.bikey
   meta.cpp
 ```
+
+> Note: the signing key was rotated on 2026-07-14 - if you have an older
+> `adelasia.bikey` from a previous release, replace it with `captcha.bikey`.
+
 ## Feedback
 
-Report bugs by [opening an issue](https://github.com/adelasia/dayz-captcha/issues).
+Report bugs by [opening an issue](https://github.com/adelasia/captcha/issues).
 
-For suggestions, questions, or general chat, [start a discussion](https://github.com/adelasia/dayz-captcha/discussions).
+For suggestions, questions, or general chat, [start a discussion](https://github.com/adelasia/captcha/discussions).
 
 ---
 
