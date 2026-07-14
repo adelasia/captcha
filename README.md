@@ -12,6 +12,22 @@ DayZ captcha mod, blocks bots and NVIDIA Inspector LOD-bias abuse.
 
 ---
 
+### False positives
+
+**At default settings, there should not be any false positives on any resolution.**
+
+A white screen only appears if Texture LOD Bias is raised.
+
+The mod's visible mip is set to **3** (mips 0–2 are invisible, 3+ are white).
+
+`x = log₂( max(2048 / width, 2048 / height) )`
+
+At default settings, **x stays below 3 on all common resolutions**, no false positives.
+
+**Either way, triggering means abnormal texture LOD is active.**
+
+---
+
 ## How it works
 
 - On connect, the client shows a 2-digit captcha before joining.
